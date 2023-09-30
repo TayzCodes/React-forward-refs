@@ -2,7 +2,11 @@ import React ,{useRef,useState,useEffect} from 'react'
 import '../styles/App.css';
 import InputField from './InputField.js';
 const App = () => {
- 
+ const newRef = useRef();
+ const {values, setValues} = useState("");
+ const settingValue = () =>{
+  setValues(newRef.value);
+ }
 //code here 
 
 
