@@ -7,6 +7,9 @@ const App = () => {
  const settingValue = () =>{
   setValues(newRef.value);
  }
+ const focusInput = () =>{
+  newRef.focus();
+ }
 //code here 
 
 
