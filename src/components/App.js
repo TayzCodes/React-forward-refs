@@ -3,12 +3,12 @@ import '../styles/App.css';
 import InputField from './InputField.js';
 const App = () => {
  const newRef = useRef();
- const {values, setValues} = useState("");
+ const [ values, setValues] = useState("");
  const settingValue = () =>{
-  setValues(newRef.value);
- }
+  setValues(newRef.current.value);
+ }    
  const focusInput = () =>{
-  newRef.focus();
+  newRef.current.focus();
  }
 //code here 
 
